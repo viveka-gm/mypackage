@@ -10,4 +10,5 @@ lisence = {file={"lis.txt"}}
 dependencies = [
   "httpx",
   "gidgethub>4.0.0",
+  "numpy"
 ]

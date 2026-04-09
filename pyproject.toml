@@ -6,9 +6,13 @@ build-backend = "flit_core.buildapi"
 name = "mypackage"
 version = "0.1.0"
 description = "My first package"
-lisence = {file={"lis.txt"}}
+lisence = {file="lis.txt"}
 dependencies = [
-  "httpx",
-  "gidgethub>4.0.0",
-  "numpy"
+  "numpy>=2.3.0",
+]
+[project.optional-dependencies]
+dev = [
+  "bumpver",
+  "pytest",
+  "pytest-cov",
 ]
